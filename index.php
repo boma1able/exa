@@ -22,7 +22,7 @@
 				<?php
 				global $post;
 				$args = array(
-					'offset' => 1,
+					//'offset' => 1,
 					'posts_per_page' => '8'
 				);
 

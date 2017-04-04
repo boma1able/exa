@@ -7,6 +7,8 @@
  * @package EXA
  */
 
+require get_template_directory() . '/tgm-plugin-activation/exa-plugin-activation.php';
+
 if ( ! function_exists( 'exa_the_theme_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -173,3 +175,18 @@ function add_search_box( $items, $args ) {
 	$items .= '<li>' . get_search_form( false ) . '</li>';
 	return $items;
 }
+
+// unyson //
+
+//function _action_theme_wp_print_styles() {
+//	if (!defined('FW')) return; // prevent fatal error when the framework is not active
+//
+//	$option_value = fw_get_db_settings_option('body-color');
+//
+//	echo '<style type="text/css">'
+//		. 'body { '
+//		. 'border: 30px solid '. esc_html($option_value) .'; '
+//		. '}'
+//		. '</style>';
+//}
+//add_action('wp_print_styles', '_action_theme_wp_print_styles');
